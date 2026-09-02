@@ -7,8 +7,10 @@ int main()
 
 	std::size_t threadCount = std::thread::hardware_concurrency(); 
 
+	//---Создаем пул потоков
 	ThreadPool pool(threadCount);
 
+	//---Добавляем задачи
 	pool.addTask(
 		[]()
 		{
