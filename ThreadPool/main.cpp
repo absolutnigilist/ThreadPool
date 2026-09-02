@@ -4,7 +4,6 @@
 int main()
 {
 	//---Получаем количество доступных аппаратных потоков
-
 	std::size_t threadCount = std::thread::hardware_concurrency(); 
 
 	//---Создаем пул потоков
